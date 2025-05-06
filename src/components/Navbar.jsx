@@ -3,12 +3,13 @@ import React from "react";
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <h1 className="logo">Igwe Bright</h1>
-      <ul className="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <h1 className="logo">iGWE BRIGHT SUNDAY</h1>
+      <div className="nav-buttons">
+        <a href="#resume" className="resume-btn">Resume</a>
+        <button className="menu-btn">
+          <span className="menu-icon">≡</span>
+        </button>
+      </div>
     </nav>
   );
 }

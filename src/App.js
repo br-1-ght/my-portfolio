@@ -1,22 +1,23 @@
 import React from "react";
+import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./pages/Home";
-import Projects from "./pages/Projects";
-import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
+import Skills from "./pages/Projects";
+import Projects from "./pages/ProjectCard";
+import Certificate from "./pages/Certificate";
 import Footer from "./components/Footer";
-import "./App.css";
 
-export default function App() {
+function App() {
   return (
-    <>
+    <div className="app">
       <Navbar />
       <Hero />
+      <Skills />
       <Projects />
-      <Resume />
-      <Contact />
+      <Certificate />
       <Footer />
-    </>
+    </div>
   );
 }
 
+export default App;
